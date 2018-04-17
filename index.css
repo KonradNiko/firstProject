@@ -19,18 +19,19 @@ div {
 
 div.withLogo {
     width: 500px;
-    height: 300px;
-    background-image: url(photo/bottom-logo.png);
+    height: 150px;
+    background-image: url(photo/top-logo.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     opacity: 0.5;
     margin: auto;
 }
 
-div.form {
+div.formRight {
     height: 490px;
     width: 360px;
     margin-left: 200px;
+    float: left;
     
 }
 
@@ -38,7 +39,7 @@ div.insideForm1 {
     text-align: center;
     color: white;
     font-size: 35px;
-    padding: 25px;
+    padding: 20px;
     text-shadow: 3px 3px 30px black, 3px 3px 3px black;
 }
 
@@ -48,6 +49,57 @@ div.insideForm2 {
     height: 370px;
     border: 15px solid;
 }
+
+div.formLeft {
+    height: 190px;
+    width: 360px;
+    float: right;
+    margin-right: 200px;
+    
+    
+}
+
+div.insideForm1L {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding-bottom: 20px;
+    text-shadow: 3px 3px 30px black, 3px 3px 3px black;
+}
+
+div.insideForm2L {
+    padding: 30px;
+    background-color: white;
+    height: 250px;
+    border: 15px solid;
+    
+}
+
+div.insideForm21L {
+    padding: 30px;
+    background-color: white;
+    height: 250px;
+    border: 15px solid;
+    
+}
+
+div.insideForm22L {
+    padding: 30px;
+    background-color: white;
+    height: 150px;
+    border: 15px solid;
+    
+}
+
+div.insideForm23L {
+    padding: 30px;
+    background-color: white;
+    height: 130px;
+    border: 15px solid;
+    
+}
+
+
 
 input.field {
     margin: 5px;
@@ -74,8 +126,6 @@ button {
     text-decoration: none;
     font-size: 24px;
 }
-
-
 
 
 
