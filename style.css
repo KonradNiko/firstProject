@@ -10,6 +10,8 @@ body {
     line-height: 120%;
     background-image: url(photo/background.jpg);
     background-size: 100%;
+    padding: 20px;
+    margin: 10px 40px 40px 10px;
 }
 
 div {
@@ -39,14 +41,15 @@ div.insideForm1 {
     text-align: center;
     color: white;
     font-size: 35px;
-    padding: 20px;
+    padding: 50px;
     text-shadow: 3px 3px 30px black, 3px 3px 3px black;
 }
 
 div.insideForm2 {
-    padding: 30px;
+    padding: 10px;
+    margin: 10px;
     background-color: white;
-    height: 370px;
+    height: 390px;
 
     box-shadow: 1px 5px 30px 19px rgba(0,0,0,0.75)
 }
@@ -56,6 +59,7 @@ div.formLeft {
     width: 360px;
     float: right;
     margin-right: 200px;
+    
     
     
 }
@@ -79,6 +83,20 @@ div.insideForm2L {
 
 div#3L {
     
+}
+
+textarea {
+    height: 150px;
+    width: 250px;
+    margin: 5px;
+    border-radius: 5px;
+
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    display: block;
+    font-size: 16px;
+    color: gray;
+    font-family: 'Titillium Web', sans-serif; 
 }
 
 input.field {
