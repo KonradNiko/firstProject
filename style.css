@@ -1,11 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
-    
     font-size: 10px;
     font-family: 'Titillium Web', sans-serif;  
 }
 
 body {
-
     font-size: 16px;
     line-height: 120%;
     background-image: url(photo/background.jpg);
@@ -14,8 +16,18 @@ body {
     margin: 10px 40px 40px 10px;
 }
 
+body::after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
 div {
     font-family: 'Titillium Web', sans-serif;
+}
+
+form {
+    background-color: white;
     
 }
 
@@ -25,16 +37,27 @@ div.withLogo {
     background-image: url(photo/top-logo.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    opacity: 0.5;
+    opacity: 0.4;
     margin: auto;
 }
 
 div.formRight {
-    height: 490px;
-    width: 360px;
-    margin-left: 200px;
-    float: left;
     
+    width: 380px;
+    margin-left: 200px;
+    position: relative;
+   
+
+}
+
+div.formLeft {
+    height: 100;
+    width: 380px;
+    margin-left: 200px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+
 }
 
 div.insideForm1 {
@@ -46,51 +69,17 @@ div.insideForm1 {
 }
 
 div.insideForm2 {
-    padding: 10px;
-    margin: 10px;
-    background-color: white;
-    height: 390px;
-
-    box-shadow: 1px 5px 30px 19px rgba(0,0,0,0.75)
-}
-
-div.formLeft {
-    height: 190px;
-    width: 360px;
-    float: right;
-    margin-right: 200px;
-    
-    
-    
-}
-
-div.insideForm1L {
-    text-align: center;
-    color: white;
-    font-size: 35px;
-    padding-bottom: 20px;
-    text-shadow: 3px 3px 30px black, 3px 3px 3px black;
-    
-}
-
-
-
-div.insideForm2L {
-    padding: 30px;
-    background-color: white;
-    box-shadow: 1px 5px 30px 19px rgba(0,0,0,0.75)  
-}
-
-div#3L {
-    
+    width: 100%;
+    height: 100%;
+    border: 25px solid rgba(0, 0, 0, 0.3);
 }
 
 textarea {
-    height: 150px;
-    width: 250px;
-    margin: 5px;
+    height: 250px;
+    width: 300px;
+    margin: 10px;
     border-radius: 5px;
-
+    border: 1px solid silver;
     background-repeat: no-repeat;
     background-position: left 15px center;
     display: block;
@@ -99,20 +88,56 @@ textarea {
     font-family: 'Titillium Web', sans-serif; 
 }
 
-input.field {
-    margin: 5px;
+input {
+    margin: 15px;
+    padding-left: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid silver;
     border-radius: 5px;
+    width: 300px;
+}
+
+input.user {
     background-image: url(photo/mail-icon.png);
     background-repeat: no-repeat;
-    background-position: left 15px center;
-    display: block;
-    width: 260px;
-    
+    background-position: left 10px center;
+
+}
+
+input.password {
+    background-image: url(photo/lock-icon.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+}
+
+input.email {
+    background-image: url(photo/mail-icon.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+}
+
+input.location {
+    background-image: url(photo/map-icon.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+}
+
+input.phone {
+    background-image: url(photo/mobile-icon.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+}
+
+input.check {
+    padding-left: 40px;
+    border-radius: 5px;
+    width: 20px;
 }
 
 button {
     margin: 10px;
-    width: 260px;
+    width: 300px;
     background-color: rgb(159, 213, 58);
     border-radius: 4px;
     background-image: linear-gradient();
@@ -123,7 +148,22 @@ button {
     text-align: center;
     text-decoration: none;
     font-size: 24px;
+    transition: 0.3s ease-in-out;
 }
+
+button:hover {
+    color: rgb(123, 173, 24);
+    box-shadow: 2px 2px 6px 4px rgba(0,0,0,0.45);    
+}
+
+img {
+    position: relative;
+    left: 720px;
+    bottom: 180px;
+    opacity: 0.4;
+}
+
+
 
 
 

@@ -17,78 +17,82 @@
      <div class="insideForm1">Register form</div>
      <div class="insideForm2">
          <form>
-                <label for="user_text"></label><input class="field" id="user" type="text" 
+                <label for="user_text"></label><input class="user" id="user" type="text" 
                 name="user_text" id="user_text" placeholder="User name" autocomplete="on"><br>
-                <label for="user_password1"></label><input class="field" id="pass1" type="password" 
+                <label for="user_password1"></label><input class="password" id="pass1" type="password" 
                 name="user_password1" id="user_password1" placeholder="Password" 
                 autocomplete="on" minlength="8" maxlength="16"><br>
-                <label for="user_password2"></label><input class="field" id="pass2" type="password" 
+                <label for="user_password2"></label><input class="password" id="pass2" type="password" 
                 name="user_password2" id="user_password2" placeholder="Confirm password" 
                 autocomplete="on" minlength="8" maxlength="16"><br>
-                <label for="user_email"></label><input class="field" id="email" type="text" 
+                <label for="user_email"></label><input class="email" id="email" type="text" 
                 name="user_email" id="user_email" placeholder="Email" 
                 autocomplete="on"><br>
-                <label for="user_tel"></label><input class="field" type="tel" name="user_tel" id="user_tel" placeholder="Your location"><br>
-                <input type="checkbox" name="user_checkbox" id="user_checkbox" value="auto"><label for="user_checkbox">I have read and accept the terms of use.</label><br>
+                <label for="user_tel"></label><input class="location" type="tel" name="user_tel" id="user_tel" placeholder="Your location"><br>
+                <input class="check" type="checkbox" name="user_checkbox" id="user_checkbox" value="auto"><label for="user_checkbox">I have read and accept the terms of use.</label><br>
                 <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
          </form>
      </div>
      <div class="insideForm1">Send email</div>
      <div class="insideForm2">
          <form>
-                <label for="user_text"></label><input class="field" id="user" type="text" 
+                <label for="user_text"></label><input class="user" id="user" type="text" 
                 name="user_text" id="user_text" placeholder="Your name" autocomplete="on"><br>
-                <label for="user_password1"></label><input class="field" id="pass1" type="password" 
+                <label for="user_password1"></label><input class="password" id="pass1" type="password" 
                 name="user_password1" id="user_password1" placeholder="Password" 
                 autocomplete="on" minlength="8" maxlength="16"><br>
 
 
                 <textarea class="field" cols="35" rows="7" placeholder="Uzupełnij" maxlength="10" style="resize:none">Type your message.</textarea>
-                <input type="checkbox" name="user_checkbox" id="user_checkbox" value="auto"><label for="user_checkbox">Send a copy to my email .</label><br>
+                <input class="check" type="checkbox" name="user_checkbox" id="user_checkbox" value="auto"><label for="user_checkbox">Send a copy to my email .</label><br>
                 <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
          </form>
      </div>
-
      
- </div>
 <br>
  <div class="formLeft">
-        <div class="insideForm1">Sign in form</div>
-        <div class="insideForm2L" id="1L">
-            <form>
-                <label for="user_text"></label><input class="field" id="user" type="text" 
-                name="user_text" id="user_text" placeholder="User name" autocomplete="on"><br>
-                <label for="user_password1"></label><input class="field" id="pass1" type="password" 
-                name="user_password1" id="user_password1" placeholder="Password" 
-                autocomplete="on" minlength="8" maxlength="16"><br>
-                   <input type="checkbox" name="user_checkbox" id="user_checkbox" value="auto"><label for="user_checkbox">Remember me.</label><br>
-                   <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
-            </form>
-        </div>
-        <div class="insideForm1">Recover form</div>
-        <div class="insideForm2L" id="2L">
-            <form>
-                <label for="user_email"></label><input class="field" id="email" type="text" 
-                name="user_email" id="user_email" placeholder="Enter your email" 
-                autocomplete="on"><br>               
-                <label for="user_tel"></label><input class="field" type="tel" name="user_tel" id="user_tel" placeholder="Enter your phone"><br>
-                   <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
-            </form>
-        </div>
-        <div class="insideForm1">Subscribe form</div>
-        <div class="insideForm2L" id="3L" >
-            <form>
-                <label for="user_email"></label><input class="field" id="email" type="text" 
-                name="user_email" id="user_email" placeholder="Enter your email" 
-                autocomplete="on"><br>                 
-                   <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
-            </form>
-        </div>
+    <div class="insideForm1">Sign in form</div>
+    <div class="insideForm2" id="1L">
+        <form>
+            <label for="user_text"></label><input class="user" id="user" type="text" 
+            name="user_text" id="user_text" placeholder="User name" autocomplete="on"><br>
+            <label for="user_password1"></label><input class="password" id="pass1" type="password" 
+            name="user_password1" id="user_password1" placeholder="Password" 
+            autocomplete="on" minlength="8" maxlength="16"><br>
+               <input class="check" type="checkbox" name="user_checkbox" id="user_checkbox" value="auto"><label for="user_checkbox">Remember me.</label><br>
+               <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
+        </form>
     </div>
+    <div class="insideForm1">Recover form</div>
+    <div class="insideForm2" id="2L">
+        <form>
+            <label for="user_email"></label><input class="email" id="email" type="text" 
+            name="user_email" id="user_email" placeholder="Enter your email" 
+            autocomplete="on"><br>               
+            <label for="user_tel"></label><input class="phone" type="tel" name="user_tel" id="user_tel" placeholder="Enter your phone"><br>
+               <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
+        </form>
+    </div>
+    <div class="insideForm1">Subscribe form</div>
+    <div class="insideForm2" id="3L" >
+        <form>
+            <label for="user_email"></label><input class="email" id="email" type="text" 
+            name="user_email" id="user_email" placeholder="Enter your email" 
+            autocomplete="on"><br>                 
+               <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
+        </form>
+    </div>
+
+    
+</div>
+
+    </div>
+    <img src="photo/bottom-logo.png">
 
 
 <!--odsunąć tekst w inputach, kreska oddzielająca w inputach, odległość od spodu, >
-<!buttony jasnozielone - button type submit, czerwony jako input-reset,
+<!buttony jasnozielone - button type submit, czerwony jako input-reset, display inline block amiast float)
+  box-shadow: 1px 5px 30px 19px rgba(0,0,0,0.75)
 >
 
     
