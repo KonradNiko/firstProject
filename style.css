@@ -22,6 +22,38 @@ body::after {
     clear:both;
 }
 
+input.check {
+position: absolute;
+z-index: -1;
+visibility: hidden;
+}
+
+label.aaa {
+    position: relative;
+    z-index: 3;
+    padding-left: 40px;
+}
+
+label.aaa::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(123, 173, 24);
+    border-radius: 5px;
+    transition: background-image .3s ease-in-out;
+}
+
+input.check:checked + label.aaa::before {
+    background-image: url(photo/check-ok.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 div {
     font-family: 'Titillium Web', sans-serif;
 }
