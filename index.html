@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="utf-8">
-    <title>Projekt z zajęć</title>
+    <title>Strona 1 od początku</title>
    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
@@ -10,90 +10,94 @@
    
 </head>
 <body>
-
- <div class="withLogo"> </div>
-
- <div class="formRight">
-     <div class="insideForm1">Register form</div>
-     <div class="insideForm2">
-         <form>
-                <label for="user_text"></label><input class="user" id="user" type="text" 
-                name="user_text" id="user_text" placeholder="User name" autocomplete="on"><br>
-                <label for="user_password1"></label><input class="password" id="pass1" type="password" 
-                name="user_password1" id="user_password1" placeholder="Password" 
-                autocomplete="on" minlength="8" maxlength="16"><br>
-                <label for="user_password2"></label><input class="password" id="pass2" type="password" 
-                name="user_password2" id="user_password2" placeholder="Confirm password" 
-                autocomplete="on" minlength="8" maxlength="16"><br>
-                <label for="user_email"></label><input class="email" id="email" type="text" 
-                name="user_email" id="user_email" placeholder="Email" 
-                autocomplete="on"><br>
-                <label for="user_tel"></label><input class="location" type="tel" name="user_tel" id="user_tel" placeholder="Your location"><br>
-                <input class="check" type="checkbox" name="user_checkbox" id="user_checkbox" value="auto"><label class="aaa" for="user_checkbox">I have read and accept the terms of use.</label><br>
-                <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
-         </form>
-     </div>
-     <div class="insideForm1">Send email</div>
-     <div class="insideForm2">
-         <form>
-                <label for="user_text"></label><input class="user" id="user" type="text" 
-                name="user_text" id="user_text" placeholder="Your name" autocomplete="on"><br>
-                <label for="user_password1"></label><input class="password" id="pass1" type="password" 
-                name="user_password1" id="user_password1" placeholder="Password" 
-                autocomplete="on" minlength="8" maxlength="16"><br>
-
-
-                <textarea class="field" cols="35" rows="7" placeholder="Uzupełnij" maxlength="10" style="resize:none">Type your message.</textarea>
-                <input class="check" type="checkbox" name="user_checkbox" id="user_checkbox1" value="auto"><label class="aaa" for="user_checkbox1">Send a copy to my email .</label><br>
-                <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
-         </form>
-     </div>
-     
-<br>
- <div class="formLeft">
-    <div class="insideForm1">Sign in form</div>
-    <div class="insideForm2" id="1L">
-        <form>
-            <label for="user_text"></label><input class="user" id="user" type="text" 
-            name="user_text" id="user_text" placeholder="User name" autocomplete="on"><br>
-            <label for="user_password1"></label><input class="password" id="pass1" type="password" 
-            name="user_password1" id="user_password1" placeholder="Password" 
-            autocomplete="on" minlength="8" maxlength="16"><br>
-               <input class="check" type="checkbox" name="user_checkbox" id="user_checkbox2" value="auto"><label class="aaa" for="user_checkbox2">Remember me.</label><br>
-               <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
-        </form>
-    </div>
-    <div class="insideForm1">Recover form</div>
-    <div class="insideForm2" id="2L">
-        <form>
-            <label for="user_email"></label><input class="email" id="email" type="text" 
-            name="user_email" id="user_email" placeholder="Enter your email" 
-            autocomplete="on"><br>               
-            <label for="user_tel"></label><input class="phone" type="tel" name="user_tel" id="user_tel" placeholder="Enter your phone"><br>
-               <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
-        </form>
-    </div>
-    <div class="insideForm1">Subscribe form</div>
-    <div class="insideForm2" id="3L" >
-        <form>
-            <label for="user_email"></label><input class="email" id="email" type="text" 
-            name="user_email" id="user_email" placeholder="Enter your email" 
-            autocomplete="on"><br>                 
-               <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
-        </form>
-    </div>
-
+    <header>
+    <center><img src="photo/top-logo.png"></center>
+    </header>
     
+    <div class="container">
+    <section class="left">
+        <div class="box">
+            <div class="box-title">Register form</div>
+            <div class="box-form">
+                <form>
+                    <label for="user_text"></label><input class="user" type="text" id="user_text" name="user_text" placeholder="User name"><br>
+                    <label for="user_password1"></label><input class="password" type="password" id="user_password1" name="user_password1" placeholder="Password"><br>
+                    <label for="user_password2"></label><input class="password" type="password" id="user_password2" name="user_password2" placeholder="Confirm password"><br>
+                    <label for="user_email"></label><input class="email" type="email" id="user_email" name="user_email" placeholder="Email"><br>
+                    <label for="user_tel"></label><input class="location" type="tel" id="user_tel" name="user_tel" placeholder="Your location"><br>
+                    <input class="check" type="checkbox" id="user_checkbox"><label class="aaa" for="user_checkbox">I have read and accept the terms of use.</label><br>
+                    <button type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+    
+
+        <div class="box">
+            <div class="box-title">Send Email</div>
+            <div class="box-form">
+                <form>
+                    <label for="user_text"></label><input class="user" type="text" id="user_text" name="user_text" placeholder="User name"><br>
+                    <label for="user_password1"></label><input class="password" type="password" id="user_password1" name="user_password1" placeholder="Password"><br>
+                    <textarea class="field" cols="35" rows="7" placeholder="Uzupełnij" maxlength="10" style="resize:none">Type your message.</textarea><br>
+                    <input class="check" type="checkbox" name="user_checkbox" id="user_checkbox1" value="auto"><label class="aaa" for="user_checkbox1">Send a copy to my email .</label><br>
+                    <button type="submit" name="user_submit" id="user_submit" formtarget="_blank">Send email</button><br>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="right">
+        <div class="box">
+            <div class="box-title">Sign in Form</div>
+            <div class="box-form">
+                <form>
+                    <label for="user_text"></label><input class="user" type="text" id="user_text" name="user_text" placeholder="User name"><br>
+                    <label for="user_password1"></label><input class="password" type="password" id="user_password1" name="user_password1" placeholder="Password"><br>
+                    <div class="div-sign-in"><input class="check" type="checkbox" name="user_checkbox" id="user_checkbox2" value="auto"><label class="aaa" for="user_checkbox2">Remember me.</label></div>
+                    <button class="check-butt" type="submit" name="user_submit" id="user_submit" formtarget="_blank">Sign up</button><br>
+                    
+                </form>
+            </div>
+        </div>
+    
+        <div class="box">
+            <div class="box-title">Recover Form</div>
+            <div class="box-form">
+                <form>
+                    <label for="user_email"></label><input class="email" type="email" id="user_email" name="user_email" placeholder="Enter your email"><br>
+                    <label for="user_tel"></label><input class="location" type="tel" id="user_tel" name="user_tel" placeholder="Enter your Phone number"><br>
+                    <div>
+                        <button class="check-butt" type="submit" name="user_submit" id="user_submit" formtarget="_blank">Send</button>
+                        <button class="done-butt" type="submit" name="user_submit" id="user_submit" formtarget="_blank">Done</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <div class="box">
+            <div class="box-title">Subscribe Form</div>
+            <div class="box-form">
+                <form>
+                    <label for="user_email"></label><input class="email" type="email" id="user_email" name="user_email" placeholder="Enter your email"><br>
+                    <div>
+                        <button class="check-butt" type="submit" name="user_submit" id="user_submit" formtarget="_blank">Subscribe</button>
+                        <button class="thanks-butt" type="submit" name="user_submit" id="user_submit" formtarget="_blank">No, thanks</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <div class="logo-bottom">
+                <img src="photo/bottom-logo.png">
+        </div>
+    
+
+    </section>
 </div>
-
-    </div>
-    <img src="photo/bottom-logo.png">
+ 
 
 
-<!--odsunąć tekst w inputach, kreska oddzielająca w inputach, odległość od spodu, >
-<!buttony jasnozielone - button type submit, czerwony jako input-reset, display inline block amiast float)
-  box-shadow: 1px 5px 30px 19px rgba(0,0,0,0.75)
->
+
 
     
 </body>
