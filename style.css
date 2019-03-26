@@ -1,40 +1,53 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 html {
     font-size: 10px;
-    font-family: 'Titillium Web', sans-serif;  
+    font-family: 'Titillium Web', sans-serif;
 }
 
 body {
     font-size: 16px;
     line-height: 120%;
     background-image: url(photo/background.jpg);
-    background-size: 100%;
+    background-size: cover;
     padding: 20px;
     margin: 10px 40px 40px 10px;
 }
 
 .container {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-evenly;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;*/
+    position: relative;
+}
+
+.right {
+    position: absolute;
+    margin-left: 52vw;
+}
+
+.left {
+    position: absolute;
+    margin-left: 10vw;
 }
 
 img {
     max-width: 100%;
     height: auto;
     opacity: 0.4;
-    
+
 }
 
 .logo-bottom {
 
     width: 360px;
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 .box-title {
@@ -121,7 +134,7 @@ input.check {
     display: none;
     width: 20px;
     max-width: 100%;
-    
+
 }
 
 placeholder {
@@ -177,7 +190,7 @@ button {
     margin-left: 35px;
     background-color: rgb(195, 223, 161);
     border: 1px solid rgb(144, 202, 109);
-   
+
 }
 
 .thanks-butt {
@@ -224,5 +237,66 @@ input.check:checked + label.aaa::before {
     background-position: center;
 }
 
+@media all and (max-width:1000px) {
+    .left {
+
+        margin-left: 5vw;
+    }
+}
+
+@media all and (max-width:950px) {
+    .left {
+        margin-left: 0vw;
+    }
+
+    .right {
+        margin-left: 46vw;
+    }
+}
+
+@media all and (max-width:840px) {
+    .left {
+        margin-left: 0;
+        float: none;
+        position: static;
+    }
+
+    .right {
+        margin-left: 0;
+        float: none;
+        position: static;
+    }
+
+    div.box {
+        width: 90vw;
+    }
+
+    .box-form {
+        width: auto;
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .box-title {
+        max-width: none;
+    }
+
+    .done-butt {
+        margin-left: 0;
+    }
+
+    .thanks-butt {
+        margin-left: 0;
+    }
 
 
+}
+
+@media all and (max-width:480px) {
+    body {
+        margin: 10px 40px 40px 0;
+    }
+}
